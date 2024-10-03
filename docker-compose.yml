@@ -1,7 +1,7 @@
 version: "3.7"
 
 services:
-    sistema_gestao:
+    sis_gestao_rl:
         build:
             context: .
             dockerfile: Dockerfile
