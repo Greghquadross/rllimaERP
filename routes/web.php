@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::prefix('produtos')->group(function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
